@@ -1,0 +1,75 @@
+body {
+	width: 600px;
+	margin: auto;
+	display: block;
+}
+
+div {
+	margin-top: 40px;
+}
+
+section {
+	margin-top: 10px;
+}
+
+input[type=radio]{
+		display:none;
+}
+
+input[type=checkbox]{
+		display:none;
+}
+
+input[type=radio] + label.male{
+	display:inline-block;
+	cursor: pointer;
+	outline: 0;
+	background-position: -576px -242px;
+	width: 175px;
+	height: 167px;
+	background-image: url(sprites/form-elements-sprite.png);
+	background-repeat: no-repeat;
+	text-indent: -99999px;
+}
+
+input[type=radio]:checked + label.male{
+	background-position: 0 -128px;
+}
+
+input[type=radio] + label.female{
+	display:inline-block;
+	cursor: pointer;
+	outline: 0;
+	width: 128px;
+	height: 128px;
+	background-image: url(sprites/form-elements-sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	text-indent: -99999px;
+}
+
+input[type=radio]:checked + label.female{
+	background-position: 0 bottom;
+}
+
+input[type=checkbox] + label.check span{
+	vertical-align: -60px;
+}
+
+input[type=checkbox]:checked + label.check{
+	background-position: 0 bottom;
+}
+
+input[type=checkbox] + label.check{
+	display:inline-block;
+	cursor: pointer;
+	outline: 0;
+	background-position: -159px -242px;
+	width: 160px;
+	height: 157px;
+	background-image: url(sprites/form-elements-sprite.png);
+	background-repeat: no-repeat;
+	margin-right: 25px;
+	text-align: center;
+	font-weight: bold;
+}
